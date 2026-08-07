@@ -16,7 +16,7 @@ int main() {
 
 	if(scanf("%d %d", &r2, &c2) != 2) return 0;
 
-	if(c1 != c2) {
+	if(c1 != r2) {
 		printf("Invalid input\n");
 		return 0;
 	}
@@ -40,7 +40,7 @@ int main() {
 
 	for(int i = 0; i < r1; i++) {
 		for(int j = 0; j < c2; j++) {
-			printf("%d%s", C[i][j], (j == c2 - 1) ? "" : "");
+			printf("%d ", C[i][j]);
 		}
 		printf("\n");
 	}
